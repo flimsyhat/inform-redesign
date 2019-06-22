@@ -1,0 +1,295 @@
+/* This is a horrible mess and needs to be cleaned up */
+
+/* BUTTON */
+
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 12px 24px;
+  border: 1px solid #2a5e8f;
+  border-radius: 8px;
+  background: #4eb0ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4eb0ff), to(#2a5e8f));
+  background: -moz-linear-gradient(top, #4eb0ff, #2a5e8f);
+  background: linear-gradient(to bottom, #4eb0ff, #2a5e8f);
+  -webkit-box-shadow: #5ed3ff 0px 0px 0px 0px;
+  -moz-box-shadow: #5ed3ff 0px 0px 0px 0px;
+  box-shadow: #5ed3ff 0px 0px 0px 0px;
+  text-shadow: #193754 1px 1px 1px;
+  font: normal normal normal 20px arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:hover,
+.button:focus {
+  border: 1px solid #316ea8;
+  background: #5ed3ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ed3ff), to(#3271ac));
+  background: -moz-linear-gradient(top, #5ed3ff, #3271ac);
+  background: linear-gradient(to bottom, #5ed3ff, #3271ac);
+  color: #ffffff;
+  text-decoration: none;
+}
+.button:active {
+  background: #2a5e8f;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2a5e8f), to(#2a5e8f));
+  background: -moz-linear-gradient(top, #2a5e8f, #2a5e8f);
+  background: linear-gradient(to bottom, #2a5e8f, #2a5e8f);
+}
+
+/* FONTS */
+
+.smoothing-fix {
+  -webkit-font-smoothing: antialiased;
+}
+
+.ibm {
+  font-family: 'IBM Plex Sans', sans-serif; font-weight: 400;
+}
+.ibm-serif {
+  font-family: 'IBM Plex Serif', serif; font-weight: 300;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif; font-weight: 300;
+}
+.font-light { font-weight: 300;}
+.font-heavy { font-weight: 700 !important;}
+
+/* MISC STYLING */
+
+.headshot {
+  width: 14rem;
+}
+.insta {
+  padding-top:0rem;
+  width: 2.2rem;
+}
+.about-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.about-small {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+.slab {
+  font-family: 'Source Serif Pro', serif;
+}
+.name {
+  font-size: 2rem;
+}
+.contact {
+  font-size: 1.7rem;
+  padding-top:.3rem;
+}
+.bg-light-gray {
+  background-color: rgba(250, 250, 250, 1)
+}
+.new-logo {
+  width: 16rem;
+}
+.tag-line {
+  margin-top: -0.7rem;
+}
+.shrink{
+    -webkit-transform:scale(0.8);
+    -moz-transform:scale(0.8);
+    -ms-transform:scale(0.8);
+    transform:scale(0.8);
+  }
+.cn {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.blue-text {
+  color: #2485D6;
+}
+.blue-color {
+  color: #008AFF;
+}
+.b-blue-dashed {
+  border-style: dashed;
+  border-color: rgba(0, 162, 255, 0.5);
+  border-width: 1px;
+}
+.card-shadow {
+  box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16)
+}
+/* Animation for contact glow */
+
+#contact:target {
+  animation: highlight 3s ease;
+  border: 1px solid rgb(150, 204, 255, 0.0);
+}
+@keyframes highlight {
+  0% { background-color: none; border: 1px solid rgb(150, 204, 255, 0.0);}
+  25% { background-color: #96ccff; border: 1px solid rgb(150, 204, 255, 0.5); }
+  100% { background-color: none; border: 1px solid rgb(150, 204, 255, 0.0); }
+}
+section > div {
+  transition: all 0.5s ease;      
+}
+
+/* MEDIA QUERIES - a frightening mess */
+
+@media screen and (min-width: 36em) and (max-width: 42em) {
+  .side-text {
+    margin-top: 4rem;
+  }
+  .micro {
+    margin-left: 0.5rem !important;
+  }
+  .hero {
+    margin-top: 7rem;
+    margin-bottom: -6rem;
+    padding: 0 0rem;
+  }
+}
+@media screen and (min-width: 36em) and (max-width: 60em) {
+  .logo {
+    width: 14rem;
+  }
+}
+@media screen and (max-width: 52.1em) {
+  .microscope {
+    display: none;
+  }
+  .header {
+    width: 100%;
+  }
+  .nav-full {
+    display:none;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+  }
+  .ht {
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 52.1em) {
+  .nav-full {
+    display: block;
+  }
+  .nav-mobile {
+    display: none;
+  }
+  .detail {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 36em) {
+  .ht {
+    padding-top: 2rem;
+    text-align: left;
+    padding-right: 0 !important;
+  }
+  .nav {
+    margin-top: -1.2rem;
+    margin-bottom: -1.6rem;
+  }
+  .new-logo {
+    max-width: 14rem;
+    padding-top: .6rem
+  }
+  .topper {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  .logo {
+    width: 12rem;
+  }
+  .ht {
+    padding-top: 2rem;
+  }
+  .insta {
+    padding-top:0rem;
+    width: 1.8rem !important;
+}
+  .detail {
+    font-size: 1.1rem;
+    font-weight: 400 !important;
+  }
+  .hit {
+    font-size: 1.7em;
+    font-weight: 300 !important;
+  }
+  .contact {
+    font-size: 1.5rem;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .about-text {
+    font-size: 1.1rem;
+    font-weight: 400 !important;
+    color: rgba(0,0,0.8)
+  }
+  .about-small {
+    font-size: 1rem;
+  }
+  .submit {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 60rem) {
+  .title-box {
+    width: 35%;
+  }
+  .title-side {
+    width: 65%;
+  }
+  .logo {
+    width: 14rem;
+  }
+}
+.insta {
+  padding-top:0rem;
+  width: 2.2rem;
+}
+@media screen and (min-width: 36em) and (max-width: 60em) {
+  .logo {
+    width: 14rem;
+  }
+}
+@media screen and (min-width: 52.1em) and (max-width: 60em) {
+  .title-text {
+    font-size: 2.4rem !important;
+  }
+}
+@media screen and (min-width: 52em) and (max-width: 60em) {
+  .microscope {
+    width: 45%;
+  }
+  .header {
+    padding-top: 1rem;
+  }
+}
+@media screen and (max-width: 52.1em) {
+  .title {
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: .6rem;
+  }
+}
+@media screen and (min-width: 52.1em) {
+  .tag {
+    margin-left: 0;
+  }
+  .nav-full {
+    display: block;
+  }
+  .nav-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 55.1em) {
+  .nav {
+  max-width: 28rem;
+  }
+}

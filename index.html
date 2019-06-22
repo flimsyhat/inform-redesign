@@ -7,13 +7,15 @@
   <meta name="description" content="">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="tachyons.css">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
   <style>
     .source-sans {
       font-family: 'Source Sans Pro', sans-serif;
     }
     body {
-      background: hsl(0, 0%, 95%);
+/*      background: hsl(0, 0%, 100%);*/
+      background: #fafafa
 /*      background-image: radial-gradient(hsla(209, 100%, 47%, .5) 5%, transparent 0); background-size: 20px 20px;*/
     }
     .light-gray-bg {
@@ -46,9 +48,11 @@
     .body-p {
       line-height: 1.6rem;
       font-size: 18px;
+      font-weight: 400;
     }
     .button {
-      font-weight: 600;
+      font-weight: 400;
+      font-size: 16px !important;
     }
     .player {
       -webkit-box-shadow: 0 10px 12px -6px #777;
@@ -115,8 +119,35 @@
   </style>
 </head>
 <body class="source-sans w-100 center black-80 f6 relative mw7">
+  <div>
+        <div class="w-100 pb0-ns cn topper">
+          <div class="w-50-l w-40-m mw8-ns w-100 dn db-ns microscope">
+            <img src="images/microscope-composite@1x.png">
+          </div>
+          <article class="v-mid w-50-l w-60-m w-100 header">
+            <div class="tc tl-ns fl-l mb5 mb4-l title">
+              <a href="index.html" class="no-underline">
+                <span class="dib o-90 w5 logo">
+                  <img src="images/logo.svg" class="w-80">
+                </span>
+              </a>
+              <h1 class="f1-l f5-m f6 ibm center w-100 title-text mt0">Scientific Illustration <span class="font-light">&amp; </span> Animation</h1>
+              <p class="tag mt5 mb0 pb3 pl2 screen">Sometimes words fall short.</p>
+              <p class="mw6 f4 body-p pb2 pl2 mb0 mt0 screen">From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.</p>
+              <div class="main-nav source-sans pl2">
+                <ul style="list-style: none;" class="ml0 pa0 mt0">
+                  <li class="fl mr3 ml0"><a href="#" class="f5 button">ABOUT</a></li>
+                  <li class="fl mr3"><a href="#" class="f5 button">CONTACT</a></li>
+                  <li class="fl mr3"><a href="#" class="f5 button"><img class="insta v-mid" src="instagram_simple_icon.svg"></a></li>
+                </ul>
+              </div>
+            </div>
+          </article>
+      </div>
+    </div>
+<!--
   <div class="fl w-50">
-<!--  <p class="title f3 dark-green mb0 pl2 mt0 pt2 light-gray screen">Inform Studio</p>-->
+  <p class="title f3 dark-green mb0 pl2 mt0 pt2 light-gray screen">Inform Studio</p>
   <img src="logo.svg" class="logo">
   <p class="sub f5 mt0 pl2 mb2 light-gray screen">Scientific Illustration & Animation</p>
   </div>
@@ -131,6 +162,7 @@
   </div>
   <p class="tag pt7 mt4 mb0 pb3 pl2 screen">Sometimes words fall short.</p>
   <p class="mw6 f4 body-p pb2 pl2 mb0 mt0 screen">From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.</p>
+-->
   <div style="padding:56.25% 0 0 0;position:relative;" class="br2 z-1 overflow-hidden ba b--black-30 mt4 mb4 mr1 ml1">
     <iframe src="https://player.vimeo.com/video/330248913?title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" class="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
@@ -144,8 +176,8 @@
   <p class="mw6 tag mt4 pt3 mb3 pb1 pl2">Sometimes words fall short.</p>
   <p class="mw6 f4 body-p pr6 pb2 pl2 mb0">From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.</p>
 -->
-  <p class="f3 mt0 pt4 mb0 pl2 tag">Want to work together?</p>
-  <p class="mw6 body-p pl2 screen pr">Get in touch at <a class="email z-1 bb dark-green" href="#">sean<span style="font-weight: 400" class="at">@</span>inform.studio</a> and we'll make it happen.</p>
-  <p class="f7 pl2 mt5 pt3 screen">Inform Studio © 2018-19</p>
+  <p class="f3 mt0 pt4 mb0 pl2 tag tc">Want to work together?</p>
+  <p class="mw6 pl4 pr body-p pl2 screen pr tc center">Get in touch at <a class="email z-1 bb dark-green" href="#">sean<span style="font-weight: 400" class="at">@</span>inform.studio</a> and we'll make it happen.</p>
+  <p class="f7 pl2 mt5 pt3 screen tc">Inform Studio © 2018-19</p>
   
 </body>
