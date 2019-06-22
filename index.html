@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>TITLE HERE</title>
+  <meta charset = "UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="tachyons.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+  <style>
+    .source-sans {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    body {
+      background: hsl(0, 0%, 95%);
+/*      background-image: radial-gradient(hsla(209, 100%, 47%, .5) 5%, transparent 0); background-size: 20px 20px;*/
+    }
+    .light-gray-bg {
+      background-color: rgb(242, 242, 242);
+    }
+    .title {
+      font-weight: 700;
+      font-size: 32px;
+    }
+    .sub {
+      font-weight: 400;
+      color: #222222;
+      letter-spacing: -.03rem;
+      font-size: 18px;
+    }
+    .dark-green {
+      color: #111111 !important;
+    }
+    .tag {
+      font-weight: 400;
+      color: #111111;
+      font-size: 30px;
+      padding-top: 7rem;
+    }
+    .body-p {
+      line-height: 1.6rem;
+      font-size: 18px;
+    }
+    .button {
+      font-weight: 600;
+    }
+    .player {
+      -webkit-box-shadow: 0 10px 12px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 10px 10px 20px -6px #777;
+    }
+    .insta {
+      width: 22px;
+      opacity: 0.9;
+      margin-top: -.24rem;
+    }
+    .email {
+      font-weight: 600;
+      color: #111111;
+      padding: 0 0.2rem;
+      text-shadow: 0 0 0;
+    }
+    .at {
+      padding: 0 .1rem;
+    }
+/*
+    .screen {
+      text-shadow: 0px 0px 10px #fcfcfc, 10px 0px 10px #fcfcfc, 0px 10px 10px #fcfcfc, -10px 0px 10px #fcfcfc, 0px -10px 10px #fcfcfc;
+    }
+*/
+    /*! CSS Used from: http://static1.squarespace.com/static/sitecss/54bb4cfce4b045585ada36f7/810/50521cf884aeb45fa5cfdb80/54c80b38e4b0d312f4d819b7/943-05142015/1555886248191/site.css?&filterFeatures=false */
+    a{text-decoration:none;}
+/*
+    a:hover{color:#60a5dd;text-decoration:none;}
+    a:focus{outline:thin dotted;}
+    a:hover,a:active{outline:0;}
+*/
+    li>*:first-child::before{white-space:pre;}
+    body #topNav ul>li>a{border-bottom-color:transparent;border-bottom-style:solid;}
+    body #topNav ul>li.active-link>a{color:#0c0e10;border-bottom-color:#eee;}
+    body #topNav a{color:#676b73;}
+    body #topNav a:hover{color:#4074d9;border-bottom-color:#eee;}
+    body a,body a:link,body a:visited{color:#507abf;}
+    body a:hover,body a:active{color:#4074d9;}
+    body a:focus{outline:none;}
+    #topNav nav li a{display:inline-block;}
+    .page-borders-thick #topNav ul>li>a{border-bottom-width:2px;}
+    @media only screen and (max-width:767px){
+    .logo-image #topNav nav li a{padding:21px 0 0;}
+    }
+    * ::selection{background:#d2e0f8;}
+    * ::-moz-selection{background:#d2e0f8;}
+    *{-webkit-font-smoothing:subpixel-antialiased;}
+/*
+    .main-nav>ul>.active-link>a{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;background-image:linear-gradient(180deg,#f4f8ff 0%,#e2edff 100%);color:#1851af!important;box-shadow:inset 0px -1px 1px 0px rgba(94,126,180,.99),inset 0px 0px 0px 1px rgba(44,95,187,.34),0px 1px 1px 0px rgba(0,0,0,.08);border-radius:40px;}
+    .main-nav>ul>.active-link>a:hover{background-image:linear-gradient(180deg,#f8faff 0%,#e8f1ff 100%);}
+    .main-nav>ul>.active-link>a:active{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;border:0px solid #000!important;background-image:linear-gradient(0deg,#f2f7ff 0%,#e2edff 100%);box-shadow:0px 1px 0px 0px #fff,inset 0px 1px 1px 0px rgba(65,117,204,.99),inset 0px 2px 2px 0px rgba(166,191,231,.99),inset 0px 0px 0px 1px rgba(44,95,187,.34);border-radius:6px;padding:4px 12px 4px 12px!important;color:#1851af!important;line-height:21px;text-shadow:0px 1px 1px #fff;color:#293f97;background-image:linear-gradient(0deg,#ecf3ff 0%,#cfe1fd 100%)!important;box-shadow:0px 1px 0px 0px #fff,inset 0px 1px 1px 0px rgba(26,45,76,.41),inset 0px 2px 2px 0px rgba(68,99,149,.5),inset 0px 0px 0px 1px rgba(28,53,94,.25)!important;}
+*/
+    .main-nav>ul>li>a{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;background-image:linear-gradient(-179deg,rgb(229,229,229) 0%,#fbfbfb 100%);box-shadow:inset 0px -1px 1px 0px rgba(105,105,105,.5),inset 0px 0px 0px 1px rgba(0,0,0,.3),0px 1px 1px 0px rgba(0,0,0,.08);border-radius:6px!important;border-radius:4px!important;line-height:21px;text-shadow:0px 1px 1px #fff;padding:8px 16px 8px 16px!important;border:0px solid #000!important;color:#222222!important;}
+    .main-nav>ul>li>a:hover{background-image:linear-gradient(-179deg,#fff 0%,#fcfcfc 100%);}
+    .main-nav>ul>li>a:active{background-image:linear-gradient(-180deg,#dcdcdc 0%,#f4f4f4 100%);box-shadow:inset 0px 1px 1px 0px rgba(0,0,0,.18),inset 0px 0px 0px 1px rgba(57,61,68,.25),inset 0px 2px 2px 0px rgba(152,152,152,.65),0px 1px 0px 0px #fff;}
+  </style>
+</head>
+<body class="source-sans w-100 center black-80 f6 relative mw7">
+  <div class="fl w-50">
+  <p class="title f3 dark-green mb0 pl2 mt0 pt2 light-gray screen">Inform Studio</p>
+  <p class="sub f5 mt0 pl2 mb2 light-gray screen">Scientific Illustration & Animation</p>
+  </div>
+   <div id="topNav">
+    <div class="main-nav source-sans pl2 pt2 w-50 fr">
+      <ul style="list-style: none;" class="ml0 pa0">
+        <li class="fr mr3"><a href="#" class="f5 button"><img class="insta v-mid" src="instagram_simple_icon.svg"></a></li>
+        <li class="fr mr3"><a href="#" class="f5 button">CONTACT</a></li>
+        <li class="fr mr3 ml0"><a href="#" class="f5 button">ABOUT</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="tag mt4 mb0 pb3 pl2 screen">Sometimes words fall short.</p>
+  <p class="mw6 f4 body-p pb2 pl2 mb0 mt0 screen">From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.</p>
+  <div style="padding:56.25% 0 0 0;position:relative;" class="br2 z-1 overflow-hidden ba b--black-40 player mt4">
+    <iframe src="https://player.vimeo.com/video/330248913?title=0&amp;byline=0&amp;portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" class="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+  <div class="mt5 br2 z-1 overflow-hidden ba b--black-40 player">
+      <!-- LightWidget WIDGET -->
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+      <iframe src="//lightwidget.com/widgets/bc1ccc672f7c58ed8a04432cc0fee75f.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+  </div>
+  <p class="mt1-ns mt0 tr"><a href="https://www.instagram.com/inform.studio/" class="black-80 pr1 pl1 no-underline f5 ttu tracked" style="font-weight: 600">See more →</a></p>
+<!--
+  <p class="mw6 tag mt4 pt3 mb3 pb1 pl2">Sometimes words fall short.</p>
+  <p class="mw6 f4 body-p pr6 pb2 pl2 mb0">From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.</p>
+-->
+  <p class="f3 mt4 pt4 mb0 pl2 screen">Want to work together?</p>
+  <p class="mw6 body-p pl2 screen pr">Get in touch at <a class="email z-1 bb dark-green" href="#">sean<span style="font-weight: 400" class="at">@</span>inform.studio</a> and we'll make it happen.</p>
+  <p class="f7 pl2 mt5 screen">Inform Studio © 2018-19</p>
+  
+</body>
