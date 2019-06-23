@@ -63,10 +63,12 @@
 .headshot {
   width: 14rem;
 }
+/*
 .insta {
   padding-top:0rem;
   width: 2.2rem;
 }
+*/
 .about-text {
   font-size: 1.4rem;
   line-height: 1.6;
@@ -134,6 +136,12 @@ section > div {
   transition: all 0.5s ease;      
 }
 
+.tag {
+      font-weight: 400;
+      color: #111111;
+/*      font-size: 30px;*/
+    }
+
 /* MEDIA QUERIES - a frightening mess */
 
 @media screen and (min-width: 36em) and (max-width: 42em) {
@@ -155,6 +163,9 @@ section > div {
   }
 }
 @media screen and (max-width: 52.1em) {
+  .tag {
+    margin-top: 3rem;
+  }
   .microscope {
     display: none;
   }
@@ -165,7 +176,7 @@ section > div {
     display:none;
   }
   .title {
-    text-align: center;
+/*    text-align: center;*/
     margin-bottom: 0rem;
     margin-top: 1rem;
   }
@@ -186,6 +197,29 @@ section > div {
   }
 }
 @media screen and (max-width: 36em) {
+  .nav-mobile {
+    margin-top: -.5rem;
+  }
+  .tag {
+    margin-top: 2rem;
+  }
+  .title {
+    margin-top: 0.6rem;
+  }
+  .insta {
+    width: 16px !important;
+    margin-top: .2rem;
+  }
+  .button {
+      font-weight: 400;
+      font-size: 12px !important;
+    }
+  .tag {
+    font-size: 1.2rem;
+  }
+  .body-p {
+    font-size: 1rem !important;
+  }
   .ht {
     padding-top: 2rem;
     text-align: left;
@@ -204,15 +238,17 @@ section > div {
     padding-left: 0rem;
   }
   .logo {
-    width: 12rem;
+    width: 10rem;
   }
   .ht {
     padding-top: 2rem;
   }
+/*
   .insta {
     padding-top:0rem;
     width: 1.8rem !important;
 }
+*/
   .detail {
     font-size: 1.1rem;
     font-weight: 400 !important;
@@ -250,10 +286,12 @@ section > div {
     width: 14rem;
   }
 }
+/*
 .insta {
   padding-top:0rem;
   width: 2.2rem;
 }
+*/
 @media screen and (min-width: 36em) and (max-width: 60em) {
   .logo {
     width: 14rem;
@@ -262,6 +300,9 @@ section > div {
 @media screen and (min-width: 52.1em) and (max-width: 60em) {
   .title-text {
     font-size: 2.4rem !important;
+  }
+  .title {
+    margin-top: -2rem !important;
   }
 }
 @media screen and (min-width: 52em) and (max-width: 60em) {
@@ -276,7 +317,7 @@ section > div {
   .title {
     text-align: center;
     margin-bottom: 0rem;
-    margin-top: .6rem;
+    margin-top: 1rem;
   }
 }
 @media screen and (min-width: 52.1em) {
