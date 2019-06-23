@@ -198,10 +198,11 @@ section > div {
 }
 @media screen and (max-width: 36em) {
   .nav-mobile {
-    margin-top: -.5rem;
+    margin-top: -.6rem;
   }
   .tag {
     margin-top: 2rem;
+    margin-bottom: 0rem;
   }
   .title {
     margin-top: 0.6rem;
@@ -219,6 +220,7 @@ section > div {
   }
   .body-p {
     font-size: 1rem !important;
+    line-height: 1.6rem !important;
   }
   .ht {
     padding-top: 2rem;
