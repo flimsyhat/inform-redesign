@@ -8,15 +8,20 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="tachyons.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400" rel="stylesheet">
   <style>
     .source-sans {
       font-family: 'Source Sans Pro', sans-serif;
     }
     body {
-/*      background: hsl(0, 0%, 100%);*/
       background: #fafafa;
-/*      background-image: radial-gradient(hsla(209, 100%, 47%, .5) 5%, transparent 0); background-size: 20px 20px;*/
+/*
+      text-transform: none; // mac ff fix
+      -webkit-font-smoothing: antialiased; // safari mac nicer
+      -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+*/
     }
     p {
       font-weight: 400;
@@ -166,7 +171,7 @@
   <p class="mw6 f4 body-p pr6 pb2 pl2 mb0">From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.</p>
 -->
   <p class="f3-ns f4 mt0 pt4-ns pt2 mb0 tc-ns pl1 pr1 pl0-ns pr0-ns ibm">Want to work together?</p>
-  <p class="pr f4-ns f5 body-p pr tc-ns center pl1 pr1 pl0-ns pr0-ns">Get in touch at <a class="email z-1 bb dark-green" href="#">sean<span style="font-weight: 400" class="at">@</span>inform.studio</a> and we'll make it happen.</p>
+  <p class="pr f4-ns f5 body-p pr tc-ns center pl1 pr1 pl0-ns pr0-ns source-sans">Get in touch at <a class="email z-1 bb dark-green" href="#">sean<span style="font-weight: 400" class="at">@</span>inform.studio</a> and we'll make it happen.</p>
   <p class="f7 pl2 mt5-ns pt3 screen tc-ns ibm">Inform Studio © 2018-19</p>
   
 </body>

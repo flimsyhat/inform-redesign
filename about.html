@@ -8,7 +8,9 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="tachyons.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400" rel="stylesheet">
   <style>
     .source-sans {
       font-family: 'Source Sans Pro', sans-serif;
@@ -17,6 +19,11 @@
 /*      background: hsl(0, 0%, 100%);*/
       background: #fafafa;
 /*      background-image: radial-gradient(hsla(209, 100%, 47%, .5) 5%, transparent 0); background-size: 20px 20px;*/
+/*
+      text-transform: none; // mac ff fix
+      -webkit-font-smoothing: antialiased; // safari mac nicer
+      -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+*/
     }
     p {
       font-weight: 400;
@@ -39,7 +46,7 @@
     .sub-small {
       font-weight: 400;
       color: #222222;
-      letter-spacing: -.03rem;
+      letter-spacing: -.035rem;
       font-size: 14px;
       margin-top: -.3rem;
     }
@@ -112,7 +119,7 @@
 <body class="source-sans w-100 center black-80 f6 relative mw7">
   <div class="w-100 cf mt4">
     <a class="fl" href="index.html"><img src="logo.svg" class="logo-small">
-    <p class="sub-small f5 mt0 mb2 light-gray screen ibm">Scientific Illustration & Animation</p>
+    <p class="sub-small f5 mt0 mb2 light-gray screen ibm">Scientific Illustration <span class="font-light">&amp; </span> Animation</p>
     </a>
     <div id="topNav">
       <div class="main-nav source-sans pl2 pt2 mt1 w-50 fr">
@@ -150,7 +157,7 @@
 </article>
   <article class="cf mt4 pl3 pr3">
   <div class="fl head-shot pr2">
-    <p class="tr f5 ttu tracked ibm">& Some Kind Words</p>
+    <p class="tr f5 ttu tracked ibm">&amp; Some Kind Words</p>
   </div>
   <div class="fl bg-light-gray pl3 ml2 mt2">
 <!--    <p class="mw6 f4 body-p pb2 mb0 screen">Some kind words:</p>-->
