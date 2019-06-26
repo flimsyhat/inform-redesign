@@ -115,7 +115,22 @@
     .about-body {
       padding-top: 1rem;
     }
+    .plc {
+      padding-left: 2.6rem;
+    }
+    .column-left {
+      width: 12rem;
+    }
+    .column-right {
+      width: 36rem;
+    }
     @media screen and (max-width: 52.1em) {
+      .column-left {
+        width: 100%;
+      }
+      .head-shot {
+        width: 12rem;
+      }
       .nav-logo{
         float: none;
         width: 100%;
@@ -127,23 +142,19 @@
         text-align: left !important;
       }
       .logo-box {
-        justify-content: left;
+        justify-content: center;
+        padding-left: 0;
       }
       .about-body {
         width: 100%;
         max-width: 36rem;
         margin: 0 auto;
-        padding-right: 1rem;
+        padding: 0 .4rem;
         padding-top: .6rem;
       }
       .headshot-box {
         width: 100%;
         text-align: center;
-      }
-      .head-shot {
-        width: 10rem;
-        margin: 0 auto;
-        padding-right: 0;
       }
       .about-tag {
         text-align: center;
@@ -154,9 +165,13 @@
         padding-left: 0;
         margin-left: 0;
         max-width: 100%;
+        width: 100%
       }
     }
     @media screen and (max-width: 36em) {
+      .head-shot {
+        width: 10rem;
+      }
       .about-body {
         padding-top: 0rem;
       }
@@ -209,25 +224,25 @@
       </div>
     </div>
   </div>
-  <div class="about-body pl3-ns pl2 pr3-ns pr2">
+  <div class="about-body">
   <article class="cf mt4">
-  <div class="fl headshot-box">
-    <div class="head-shot image-padding">
-    <img src="images/headshots/sean-square.jpg" class="card-shadow ba b--black-60 br3">
+  <div class="fl column-left pr1 tc">
+    <div class="w-100">
+    <img src="images/headshots/sean-square.jpg" class="head-shot card-shadow ba b--black-60 br3">
     </div>
   </div>
-  <div class="fl bg-light-gray about-graph pl3 ml2">
+  <div class="fl bg-light-gray about-graph column-right plc">
     <p class="tag about-tag f3 mb3 mt0 ibm">Hi! I'm Sean Kelley.</p>
-    <p class="mw6 about-graph f4 body-p pb2 mb0 mt0 screen ibm about-text">I help scientists and science communicators share their work effectively.</p>
-    <p class="mw6 about-graph f5 pb2 mb0 mt">I originally studied to be a physicist, but while in school I fell in love with 3D modeling and animation.</p>
-    <p class="mw6 about-graph f5 pb2 mb0 mt2">Now, science illustration combines both worlds! I believe that beautiful and accurate depictions of scientific research are one of the best ways to inform and inspire others.</p>
+    <p class=" about-graph f4 body-p pb2 mb0 mt0 screen ibm about-text">I help scientists and science communicators share their work effectively.</p>
+    <p class=" about-graph f5 pb2 mb0 mt">I originally studied to be a physicist, but while in school I fell in love with 3D modeling and animation.</p>
+    <p class=" about-graph f5 pb2 mb0 mt2">Now, science illustration combines both worlds! I believe that beautiful and accurate depictions of scientific research are one of the best ways to inform and inspire others.</p>
   </div>
 </article>
   <article class="cf mt4">
-  <div class="fl tr head-shot pr2 sidebar">
+  <div class="fl tr column-left sidebar">
     <p class="f5 ttu tracked ibm">Groups I've Worked With</p>
   </div>
-  <div class="fl bg-light-gray ml2 w-70 flex flex-wrap items-center justify-center sidebar logo-box">
+  <div class="fl bg-light-gray column-right plc flex flex-wrap items-center justify-center sidebar logo-box">
     <div class="dib client-logo"><img src="images/client-logos/umd-logo.png"></div>
     <div class="dib client-logo"><img src="images/client-logos/cornell_logo_simple.svg"></div>
     <div class="dib client-logo"><img src="images/client-logos/jqi_2-line_10-23_black_rev_300.png"></div>
@@ -237,12 +252,12 @@
   </div>
 </article>
   <article class="cf mt4">
-  <div class="fl tr head-shot pr2 sidebar">
-    <p class="f5 ttu tracked ibm">&amp; Some Kind Words</p>
+  <div class="fl tr column-left sidebar">
+    <p class="f5 ttu tracked ibm">Some kind words</p>
   </div>
-  <div class="fl bg-light-gray pl3-ns ml2-ns mt2-ns">
+  <div class="fl bg-light-gray about-graph column-right plc">
 <!--    <p class="mw6 f4 body-p pb2 mb0 screen">Some kind words:</p>-->
-    <p class="mw6 f5 pb2 mb0 mt2 i">"Now, science illustration combines both worlds! I believe that beautiful and accurate depictions of scientific research are one of the best ways to inform and inspire others."</p>
+    <p class="mw6 f5 pb2 mb0 i">"Now, science illustration combines both worlds! I believe that beautiful and accurate depictions of scientific research are one of the best ways to inform and inspire others."</p>
     <p class="f5 fs-normal mt0 ibm pb2">– This Person</p>
     <p class="mw6 f5 pb2 mb0 i">"Now, science illustration combines both worlds! I believe that beautiful and accurate depictions of scientific research are one of the best ways to inform and inspire others."</p>
     <p class="ibm f5 fs-normal mt0 pb2">– This Person</p>
@@ -251,20 +266,20 @@
   </div>
 </article>
    <article class="cf mt4">
-  <div class="fl tr head-shot pr2 sidebar">
+  <div class="fl tr column-left sidebar">
     <p class="f5 ibm ttu tracked">Services</p>
   </div>
-  <div class="fl bg-light-gray pl3-ns ml2-ns">
+  <div class="fl bg-light-gray about-graph column-right plc">
 <!--    <p class="mw6 f4 body-p pb2 mb0 mt3 pt1 screen">Your one-stop visual shop. </p>-->
-    <p class="mw6 f5 pb2 mb0 mt3">From attractive illlustrations and technical drawings, to detailed animation and interactive models, I can produce visuals appropriate for every situation.</p>
-    <p class="mw6 f5 pb2 mb0 mt2">I'll work closely with you to ensure the science is communicated accurately and effectively.</p>
+    <p class="f5 pb2 mb0 mt3">From attractive illlustrations and technical drawings, to detailed animation and interactive models, I can produce visuals appropriate for every situation.</p>
+    <p class="f5 pb2 mb0 mt2">I'll work closely with you to ensure the science is communicated accurately and effectively.</p>
   </div>
 </article>
   <article class="cf mt4">
-  <div class="fl tr head-shot pr2 sidebar">
+  <div class="fl tr column-left sidebar">
     <p class="tr f5 ibm ttu tracked sidebar">Contact</p>
   </div>
-  <div class="fl bg-light-gray pl3-ns ml2-ns">
+  <div class="fl bg-light-gray about-graph column-right plc">
 <!--    <p class="mw6 f4 body-p pb2 mb0 screen">Interested in working together?</p>-->
     <p class="mw6 f5 pb2 mb0 mt3">The best way to contact me is through email: <a class="email z-1 bb" href="#">sean<span style="font-weight: 400" class="at">@</span>inform.studio</a>
   </div>
