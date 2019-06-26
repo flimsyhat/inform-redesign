@@ -22,6 +22,10 @@
       -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
 */
     }
+    .nav-logo{
+      float: left;
+      margin-top: 2rem;
+    }
     p {
       font-weight: 400;
       line-height: 1.6rem;
@@ -88,7 +92,22 @@
     .arrow-icon {
       width: 15px;
       vertical-align: middle;
-      padding-bottom: 2px;
+      padding-bottom: 3px;
+    }
+    .sub-small {
+      font-weight: 400;
+      color: #222222;
+      letter-spacing: -.035rem;
+      font-size: 14px;
+      margin-top: -.3rem;
+    }
+    @media screen and (max-width: 52.1em) {
+    .nav-logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+      }
     }
 /*  
     .screen {
@@ -105,6 +124,22 @@
   </style>
 </head>
 <body class="source-sans w-100 center black-80 f6 relative mw7">
+  <div class="w-100 cf">
+    <div class="nav-logo nav-mobile">
+    <a class="" href="index.html"><img src="logo.svg" class="logo-small">
+    <p class="sub-small f5 mt0 mb2 light-gray screen ibm">Scientific Illustration <span class="font-light">&amp; </span> Animation</p>
+    </a>
+    </div>
+    <div id="topNav">
+      </div>
+      <div class="main-nav pl1 pl0-ns w-100 tc pt3 nav-mobile">
+        <ul style="list-style: none;" class="ml0 pa0 mt0">
+          <li class="dib mr2 ml2 ml0 active-link ibm"><a href="about.html" class="f5 button">ABOUT</a></li>
+          <li class="dib mr2 ibm"><a href="mailto:sean@inform.studio" class="f5 button">CONTACT</a></li>
+          <li class="dib mr2 ibm"><a href="https://www.instagram.com/inform.studio/" class="f5 button"><img class="insta v-mid" src="instagram_simple_icon.svg"></a></li>
+        </ul>
+      </div>
+    </div>
   <div>
         <div class="w-100 pb0-ns cn topper">
           <div class="w-50-l w-40-m mw8-ns w-100 dn db-ns microscope mt1">
@@ -112,18 +147,13 @@
           </div>
           <article class="v-mid w-50-l w-60-m w-100 header pl1 pr1 pl0-l pr0-l">
             <div class="tl fl-l mb5 mb4-l title pl1 pr1 pl0-ns pr0-ns">
+              <div class="nav-full">
               <a href="index.html" class="no-underline">
                 <span class="dib o-90 w5 logo pl1-l">
                   <img src="images/logo.svg" class="w-80">
                 </span>
               </a>
               <h1 class="f1-l f5-m f6 ibm center w-100 title-text mt0">Scientific Illustration <span class="font-light">&amp; </span> Animation</h1>
-              <div class="main-nav nav-mobile pl1 pl0-ns">
-                <ul style="list-style: none;" class="ml0 pa0 mt0">
-                  <li class="dib mr2 ml2 ml0"><a href="about.html" class="f5 button">ABOUT</a></li>
-                  <li class="dib mr2"><a href="mailto:sean@inform.studio" class="f5 button">CONTACT</a></li>
-                  <li class="dib mr2"><a href="https://www.instagram.com/inform.studio/" class="f5 button"><img class="insta v-mid" src="instagram_simple_icon.svg"></a></li>
-                </ul>
               </div>
               <p class="tag mt5 mb2 pb3 f3-ns f4 ibm">Sometimes words fall short.</p>
               <p class="mw6 f4-ns f5 body-p pb2 mb0 mt0 center tl">From technical illustrations to detailed animations, we translate complex scientific phenomena into clear visual form.</p>
@@ -171,6 +201,6 @@
 -->
   <p class="f3-ns f4 mt0 pt4-ns pt2 mb0 tc-ns pl1 pr1 pl0-ns pr0-ns ibm">Want to work together?</p>
   <p class="pr f4-ns f5 body-p pr tc-ns center pl1 pr1 pl0-ns pr0-ns source-sans">Get in touch at <a class="email bb" href="#">sean<span style="font-weight: 400" class="at">@</span>inform.studio</a> and we'll make it happen.</p>
-  <p class="f7 pl2 mt5-ns pt3 screen tc-ns ibm">Inform Studio © 2018-19</p>
+  <p class="f7 pl2 pl0-ns mt5-ns pt3 screen tc-ns ibm">Inform Studio © 2018-19</p>
   
 </body>
