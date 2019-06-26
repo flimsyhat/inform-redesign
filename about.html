@@ -97,11 +97,81 @@
     .head-shot {
       width: 12rem;
     }
+    .image-padding {
+     padding-right: 1rem;
+    }
     .client-logo {
       width: 240px;
       padding: 1rem 1.5rem;
     }
-/*  
+    .headshot-box {
+      width: auto;
+      text-align: left;
+    }
+    .nav-logo{
+      float: left;
+      margin-top: 2rem;
+    }
+    .about-body {
+      padding-top: 1rem;
+    }
+    @media screen and (max-width: 52.1em) {
+      .nav-logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .sidebar {
+        width: 100% !important;
+        text-align: left !important;
+      }
+      .logo-box {
+        justify-content: left;
+      }
+      .about-body {
+        width: 100%;
+        max-width: 36rem;
+        margin: 0 auto;
+        padding-right: 1rem;
+        padding-top: .6rem;
+      }
+      .headshot-box {
+        width: 100%;
+        text-align: center;
+      }
+      .head-shot {
+        width: 10rem;
+        margin: 0 auto;
+        padding-right: 0;
+      }
+      .about-tag {
+        text-align: center;
+        padding-top: 1.2rem;
+        padding-bottom: 1rem;
+      }
+      .about-graph {
+        padding-left: 0;
+        margin-left: 0;
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 36em) {
+      .about-body {
+        padding-top: 0rem;
+      }
+      .about-text {
+        padding-top: 1rem;
+      }
+      .client-logo {
+        width: 50%;
+        padding: 1rem 1rem;
+      }
+      .logo-box {
+        margin-left: 0;
+      }
+    }
+      /*  }
     .screen {
       text-shadow: 0px 0px 10px #fcfcfc, 10px 0px 10px #fcfcfc, 0px 10px 10px #fcfcfc, -10px 0px 10px #fcfcfc, 0px -10px 10px #fcfcfc;
     }
@@ -116,36 +186,48 @@
   </style>
 </head>
 <body class="source-sans w-100 center black-80 f6 relative mw7">
-  <div class="w-100 cf mt4">
-    <a class="fl" href="index.html"><img src="logo.svg" class="logo-small">
+  <div class="w-100 cf">
+    <div class="nav-logo">
+    <a class="" href="index.html"><img src="logo.svg" class="logo-small">
     <p class="sub-small f5 mt0 mb2 light-gray screen ibm">Scientific Illustration <span class="font-light">&amp; </span> Animation</p>
     </a>
+    </div>
     <div id="topNav">
-      <div class="main-nav source-sans pl2 pt2 mt1 w-50 fr">
+      <div class="main-nav nav-full source-sans pl2 pt3 mt4 w-50 fr">
         <ul style="list-style: none;" class="ml0 pa0 fr">
           <li class="dib mr3 ml0 active-link ibm"><a href="#" class="f5 button">ABOUT</a></li>
           <li class="dib mr3 ibm"><a href="mailto:sean@inform.studio" class="f5 button">CONTACT</a></li>
           <li class="dib mr3"><a href="https://www.instagram.com/inform.studio/" class="f5 button"><img class="insta v-mid" src="instagram_simple_icon.svg"></a></li>
         </ul>
       </div>
+      <div class="main-nav nav-mobile pl1 pl0-ns w-100 tc pt3">
+        <ul style="list-style: none;" class="ml0 pa0 mt0">
+          <li class="dib mr2 ml2 ml0 active-link ibm"><a href="about.html" class="f5 button">ABOUT</a></li>
+          <li class="dib mr2 ibm"><a href="mailto:sean@inform.studio" class="f5 button">CONTACT</a></li>
+          <li class="dib mr2 ibm"><a href="https://www.instagram.com/inform.studio/" class="f5 button"><img class="insta v-mid" src="instagram_simple_icon.svg"></a></li>
+        </ul>
+      </div>
     </div>
   </div>
-  <article class="cf mt4 pt3 pl3 pr3">
-  <div class="fl head-shot pr3">
+  <div class="about-body pl3-ns pl2 pr3-ns pr2">
+  <article class="cf mt4">
+  <div class="fl headshot-box">
+    <div class="head-shot image-padding">
     <img src="images/headshots/sean-square.jpg" class="card-shadow ba b--black-60 br3">
+    </div>
   </div>
-  <div class="fl bg-light-gray pl3 ml2">
-    <p class="tag f3 mb3 mt0 pb ibm">Hi! I'm Sean Kelley.</p>
-    <p class="mw6 f4 body-p pb2 mb0 mt0 screen ibm">I help scientists and science communicators share their work effectively.</p>
-    <p class="mw6 f5 pb2 mb0 mt">I originally studied to be a physicist, but while in school I fell in love with 3D modeling and animation.</p>
-    <p class="mw6 f5 pb2 mb0 mt2">Now, science illustration combines both worlds! I believe that beautiful and accurate depictions of scientific research are one of the best ways to inform and inspire others.</p>
+  <div class="fl bg-light-gray about-graph pl3 ml2">
+    <p class="tag about-tag f3 mb3 mt0 ibm">Hi! I'm Sean Kelley.</p>
+    <p class="mw6 about-graph f4 body-p pb2 mb0 mt0 screen ibm about-text">I help scientists and science communicators share their work effectively.</p>
+    <p class="mw6 about-graph f5 pb2 mb0 mt">I originally studied to be a physicist, but while in school I fell in love with 3D modeling and animation.</p>
+    <p class="mw6 about-graph f5 pb2 mb0 mt2">Now, science illustration combines both worlds! I believe that beautiful and accurate depictions of scientific research are one of the best ways to inform and inspire others.</p>
   </div>
 </article>
-  <article class="cf mt4 pl3 pr3">
-  <div class="fl head-shot pr2">
-    <p class="tr f5 ttu tracked ibm">Groups I've Worked With</p>
+  <article class="cf mt4">
+  <div class="fl tr head-shot pr2 sidebar">
+    <p class="f5 ttu tracked ibm">Groups I've Worked With</p>
   </div>
-  <div class="fl bg-light-gray ml2 w-70 flex flex-wrap items-center justify-center">
+  <div class="fl bg-light-gray ml2 w-70 flex flex-wrap items-center justify-center sidebar logo-box">
     <div class="dib client-logo"><img src="images/client-logos/umd-logo.png"></div>
     <div class="dib client-logo"><img src="images/client-logos/cornell_logo_simple.svg"></div>
     <div class="dib client-logo"><img src="images/client-logos/jqi_2-line_10-23_black_rev_300.png"></div>
@@ -154,11 +236,11 @@
     <div class="dib client-logo"><img src="images/client-logos/princeton.png"></div>
   </div>
 </article>
-  <article class="cf mt4 pl3 pr3">
-  <div class="fl head-shot pr2">
-    <p class="tr f5 ttu tracked ibm">&amp; Some Kind Words</p>
+  <article class="cf mt4">
+  <div class="fl tr head-shot pr2 sidebar">
+    <p class="f5 ttu tracked ibm">&amp; Some Kind Words</p>
   </div>
-  <div class="fl bg-light-gray pl3 ml2 mt2">
+  <div class="fl bg-light-gray pl3-ns ml2-ns mt2-ns">
 <!--    <p class="mw6 f4 body-p pb2 mb0 screen">Some kind words:</p>-->
     <p class="mw6 f5 pb2 mb0 mt2 i">"Now, science illustration combines both worlds! I believe that beautiful and accurate depictions of scientific research are one of the best ways to inform and inspire others."</p>
     <p class="f5 fs-normal mt0 ibm pb2">– This Person</p>
@@ -168,24 +250,25 @@
     <p class="ibm f5 fs-normal mt0">– This Person</p>
   </div>
 </article>
-   <article class="cf mt4 pl3 pr3">
-  <div class="fl head-shot pr2">
-    <p class="tr f5 ibm ttu tracked">Services</p>
+   <article class="cf mt4">
+  <div class="fl tr head-shot pr2 sidebar">
+    <p class="f5 ibm ttu tracked">Services</p>
   </div>
-  <div class="fl bg-light-gray pl3 ml2">
+  <div class="fl bg-light-gray pl3-ns ml2-ns">
 <!--    <p class="mw6 f4 body-p pb2 mb0 mt3 pt1 screen">Your one-stop visual shop. </p>-->
     <p class="mw6 f5 pb2 mb0 mt3">From attractive illlustrations and technical drawings, to detailed animation and interactive models, I can produce visuals appropriate for every situation.</p>
     <p class="mw6 f5 pb2 mb0 mt2">I'll work closely with you to ensure the science is communicated accurately and effectively.</p>
   </div>
 </article>
-  <article class="cf mt4 pl3 pr3">
-  <div class="fl head-shot pr2">
-    <p class="tr f5 ibm ttu tracked">Contact</p>
+  <article class="cf mt4">
+  <div class="fl tr head-shot pr2 sidebar">
+    <p class="tr f5 ibm ttu tracked sidebar">Contact</p>
   </div>
-  <div class="fl bg-light-gray pl3 ml2">
+  <div class="fl bg-light-gray pl3-ns ml2-ns">
 <!--    <p class="mw6 f4 body-p pb2 mb0 screen">Interested in working together?</p>-->
     <p class="mw6 f5 pb2 mb0 mt3">The best way to contact me is through email: <a class="email z-1 bb" href="#">sean<span style="font-weight: 400" class="at">@</span>inform.studio</a>
   </div>
 </article>
-  <p class="f7 pl2 mt5-ns pt3 screen tc-ns">Inform Studio © 2018-19</p>
+  <p class="f7 mt5-ns mt4 pt3 screen tc-ns">Inform Studio © 2018-19</p>
+  </div>
 </body>

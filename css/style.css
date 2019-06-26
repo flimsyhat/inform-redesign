@@ -154,6 +154,9 @@ section > div {
   .tag {
     margin-top: 3rem;
   }
+  .about-tag {
+    margin-top: 0rem !important;
+  }
   .microscope {
     display: none;
   }
@@ -185,6 +188,9 @@ section > div {
   }
 }
 @media screen and (max-width: 36em) {
+  .logo-small {
+    width: 10rem;
+  }
   .nav-mobile {
     margin-top: -.6rem;
   }
